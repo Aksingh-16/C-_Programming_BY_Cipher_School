@@ -1,1 +1,12 @@
-
+#include<iostream>       // Include the necessary header file for input and output operations.
+using namespace std;     // Use the standard namespace to simplify code.
+int main(){
+    float a=2;           // Declare and initialize a floating-point variable 'a' with the value 2.
+    float b=3.21;        // Declare and initialize a floating-point variable 'b' with the value 3.21.
+    int c=42;             // Declare and initialize an integer variable 'c' with the value 42.
+    char d ='p';         // Declare and initialize a character variable 'd' with the value 'p'.
+    string str= "gh";    // Declare and initialize a string variable 'str' with the value "gh".
+    cout<<sizeof(a)<<" "<<sizeof(c);     // Output the size of variable 'a' and 'c' in bytes.
+    float result = a+b;                 // Declare and calculate the sum of 'a' and 'b', storing it in 'result'.
+    cout<<result;                      // Output the result of the addition.
+}
