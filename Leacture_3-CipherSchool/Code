@@ -1,0 +1,20 @@
+#include<iostream> // Include the necessary header file for input and output operations.
+
+using namespace std; // Use the standard namespace to simplify code.
+
+int main(){
+    int arr[10]; // Declare an array of integers with a size of 10.
+    int sum = 0; // Initialize a variable 'sum' to store the sum of elements.
+    int i; // Declare a variable 'i' for loop iteration.
+
+    for (i=0; i<2; i++){ // Loop from 0 to 1 (2 iterations).
+        cout<<i<<" "; // Output the current value of 'i' followed by a space.
+    }
+
+    cout<<i <<endl; // Output the final value of 'i' after the loop and move to a new line.
+    cout <<sum; // Output the value of 'sum'.
+    
+    return 0; // Return 0 to indicate successful completion of the program.
+}
+
+}
