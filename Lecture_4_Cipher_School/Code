@@ -1,0 +1,34 @@
+#include<iostream> // Include the necessary header file for input and output operations.
+
+using namespace std; // Use the standard namespace to simplify code.
+
+class Employee {
+    private:
+        int age;
+    public:
+        string name;
+    protected:
+        int salary;
+        void set(int _age, int _salary); // Declaration of the set method.
+};
+
+// Definition of the set method outside the class.
+void Employee::set(int _age, int _salary) {
+    age = _age;
+    salary = _salary;
+}
+
+class dev : public Employee {
+    public:
+        void show() {
+            cout << name << " " << salary << endl;
+        }
+};
+
+int main() {
+    dev emp; // Create an object of the 'dev' class.
+
+    emp.name = "Don";
+    emp.set(23, 90000); // Call the 'set' method to set age and salary.
+    emp.show(); // Call the 'show' method to display information.
+}
