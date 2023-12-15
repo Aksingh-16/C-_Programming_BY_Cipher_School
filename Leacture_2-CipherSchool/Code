@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int x; // Declare x as a global variable
+
+int fun(int a, int b){
+    x = 10;
+    return a + b;
+}
+
+int main(){
+    int c;
+    cout << x << endl;
+    fun(3, 4); // 
+    cout << x << endl;
+    cout << c << endl;
+    
+    return 0; // Add a return statement to indicate successful completion
+}
